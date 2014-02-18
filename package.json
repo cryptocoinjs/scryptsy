@@ -1,0 +1,14 @@
+{
+  "name": "scryptsy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/scrypt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "terst": "0.0.1"
+  }
+}
