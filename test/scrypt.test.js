@@ -41,6 +41,7 @@ describe('+ script()', function() {
     })
   })
 
+  //impractical to run
   describe.skip('> when test vector 4', function() {
     it('should return the proper result', function() {
       var key = "pleaseletmein";
