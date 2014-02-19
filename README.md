@@ -37,6 +37,34 @@ console.log(data.toString('hex'))
 // => 7023bdcb3afd7348461c06cd81fd38ebfda8fbba904f8e3ea9b543f6545da1f2d5432955613f0fcf62d49705242a9af9e61e85dc0d651e40dfcf017b45575887
 ```
 
+### Bundling for the Browser
+
+To use in the browser, clone the repo and then download [Browserify](https://github.com/substack/node-browserify):
+
+    npm install -g browserify
+
+run:
+
+    browserify --standalone pbdkf2 < lib/pbkdf2.js > pbdkf2.bundle.js
+
+then include `pbdkf2.bundle.js` in your `<script>` tag in your html. 
+
+
+### Testing
+
+If you want to test the algorithm, clone the git repo. Then run `npm install --development` to install all of the dependencies.
+
+#### Node.js
+
+run:
+
+    make test-node
+
+### Browser
+
+run:
+
+    make test-browser
 
 
 Resources
