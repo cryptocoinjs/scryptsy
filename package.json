@@ -17,5 +17,15 @@
   "repository": {
     "url": "git@github.com:cryptocoinjs/scryptsy.git",
     "type": "git"
-  }
+  },
+  "keywords": [
+    "crytpo",
+    "cryptography",
+    "scrypt",
+    "kdf",
+    "litecoin",
+    "dogecoin",
+    "bitcoin",
+    "bip38"
+  ]
 }
