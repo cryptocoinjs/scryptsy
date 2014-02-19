@@ -1,6 +1,11 @@
-var scrypt = require('../').scrypt
+var scrypt = null;
 
-require('terst')
+if (typeof module != 'undefined' && module.exports) {
+  scrypt = require('../').scrypt;
+  require('terst');
+} else {
+  scrypt = window.mod.scrypt;
+}
 
 //some tests params from: https://github.com/barrysteyn/node-scrypt/blob/master/tests/scrypt-tests.js
 //also: https://tools.ietf.org/html/draft-josefsson-scrypt-kdf-00
