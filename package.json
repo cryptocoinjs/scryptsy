@@ -9,9 +9,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "terst": "0.0.1",
-    "browserify": "~3.30.1",
-    "mocha": "~1.17.1"
+    "terst": "0.0.2",
+    "mocha": "~1.17.1",
+    "mochify": "~0.4.2"
   },
   "dependencies": {
     "pbkdf2-sha256": "~0.1.1"

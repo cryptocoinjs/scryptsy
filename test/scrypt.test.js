@@ -1,11 +1,8 @@
 var scrypt = null;
 
-if (typeof module != 'undefined' && module.exports) {
-  scrypt = require('../').scrypt;
-  require('terst');
-} else {
-  scrypt = window.mod.scrypt;
-}
+scrypt = require('../').scrypt;
+var terst = require('terst');
+
 
 //some tests params from: https://github.com/barrysteyn/node-scrypt/blob/master/tests/scrypt-tests.js
 //also: https://tools.ietf.org/html/draft-josefsson-scrypt-kdf-00
@@ -13,7 +10,7 @@ if (typeof module != 'undefined' && module.exports) {
 // => https://twitter.com/dchest/status/247734446881640448
 
 
-describe('+ script()', function() {
+describe('+ script()', function() { //fails in browser, if I recall do to pbkdf2-sha256 empty key or empty salt
   describe('> when test vector 1', function() {
     it('return the proper result', function() {
       var key = '';//new Buffer('');
