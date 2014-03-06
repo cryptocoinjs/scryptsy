@@ -12,10 +12,6 @@ Why?
 Why didn't I just the predominant pure JavaScript imlementation found [here](https://github.com/cheongwy/node-scrypt-js)? Because it's riddled with bugs, contains no tests, and is a transliteration of the Java version. i.e. it's neither Node.js optimized nor browser optimized. Required optimizations: [Buffer](http://nodejs.org/api/buffer.html) in Node.js and [type arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) in the browser.
 
 
-### Note
-
-This has been optimized and usings some static typed arrays. This means that in your application in Node.js or in the browser, you'll only want to run the algorithm once during any given time. 
-
 
 Usage
 -----
