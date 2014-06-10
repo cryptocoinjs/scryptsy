@@ -10,8 +10,6 @@ scryptsy
 `scryptsy` is a pure JavaScript implementation of the [scrypt][wiki] key deriviation function that is fully compatible with Node.js and the browser (via Browserify). 
 
 
-
-
 Why?
 ----
 
@@ -49,9 +47,9 @@ To use in the browser, clone the repo and then download [Browserify](https://git
 
 run:
 
-    browserify --standalone pbdkf2 < lib/pbkdf2.js > pbdkf2.bundle.js
+    browserify --standalone scryptsy < lib/scrypt.js > scryptsy.bundle.js
 
-then include `pbdkf2.bundle.js` in your `<script>` tag in your html. 
+then include `scryptsy.bundle.js` in your `<script>` tag in your html. 
 
 
 ### Testing
