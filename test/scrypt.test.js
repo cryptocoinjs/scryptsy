@@ -1,7 +1,5 @@
-var scrypt = null;
-
-scrypt = require('../');
-var terst = require('terst');
+var assert = require('assert')
+var scrypt = require('../')
 
 var fixtures = require('./fixtures/scrypt')
 
@@ -16,7 +14,7 @@ describe('scrypt', function() {
       if (f.skip) return //impractical to run most times
       it('should compute for ' + f.description, function() {
         var data = scrypt(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen)
-        EQ (data.toString('hex'), f.result)
+        assert.equal(data.toString('hex'), f.result)
       })
     })
   })

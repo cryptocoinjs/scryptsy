@@ -9,7 +9,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "terst": "0.0.2",
     "mocha": "~1.17.1",
     "mochify": "~0.4.2"
   },
