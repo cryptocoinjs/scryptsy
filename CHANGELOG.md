@@ -1,7 +1,11 @@
+1.0.0 / 2014-06-10
+------------------
+- moved tests to fixtures
+
+
 0.2.0 / 2014-03-05
 ------------------
 - made a lot of scrypt functions internal along with variables to make thread safe
-
 
 0.1.0 / 2014-02-18
 ------------------
