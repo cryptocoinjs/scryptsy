@@ -9,8 +9,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "~1.17.1",
-    "mochify": "~0.4.2"
+    "mocha": "^1.20.1",
+    "mochify": "^0.4.2",
+    "crypto-browserify": "^2.1.8"
   },
   "dependencies": {
     "pbkdf2-sha256": "^1.0.1"
@@ -28,5 +29,8 @@
     "dogecoin",
     "bitcoin",
     "bip38"
-  ]
+  ],
+  "browser": {
+    "crypto": "crypto-browserify"
+  }
 }
