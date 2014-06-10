@@ -1,6 +1,6 @@
 var scrypt = null;
 
-scrypt = require('../').scrypt;
+scrypt = require('../');
 var terst = require('terst');
 
 var fixtures = require('./fixtures/scrypt')

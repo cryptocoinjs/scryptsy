@@ -2,6 +2,7 @@
 ------------------
 - moved tests to fixtures
 - removed semilcolons per http://cryptocoinjs.com/about/contributing/#semicolons
+- changed `module.exports.scrypt = funct..` to `module.exports = funct...`
 
 
 0.2.0 / 2014-03-05
