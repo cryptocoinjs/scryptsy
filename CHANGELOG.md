@@ -8,6 +8,7 @@
 - added `crypto-browserify` dev dep for `pbkdf2-sha256` tests
 - added TravisCI
 - added Coveralls
+- added testling
 
 0.2.0 / 2014-03-05
 ------------------
