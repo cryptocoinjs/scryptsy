@@ -1,6 +1,7 @@
 1.0.0 / 2014-06-10
 ------------------
 - moved tests to fixtures
+- removed semilcolons per http://cryptocoinjs.com/about/contributing/#semicolons
 
 
 0.2.0 / 2014-03-05
