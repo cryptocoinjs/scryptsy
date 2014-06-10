@@ -4,6 +4,7 @@
 - removed semilcolons per http://cryptocoinjs.com/about/contributing/#semicolons
 - changed `module.exports.scrypt = funct..` to `module.exports = funct...`
 - removed `terst` from dev deps
+- upgraded `"pbkdf2-sha256": "~0.1.1"` to `"pbkdf2-sha256": "^1.0.1"`
 
 
 0.2.0 / 2014-03-05

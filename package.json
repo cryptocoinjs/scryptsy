@@ -13,7 +13,7 @@
     "mochify": "~0.4.2"
   },
   "dependencies": {
-    "pbkdf2-sha256": "~0.1.1"
+    "pbkdf2-sha256": "^1.0.1"
   },
   "repository": {
     "url": "git@github.com:cryptocoinjs/scryptsy.git",
