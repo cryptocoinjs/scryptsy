@@ -9,7 +9,7 @@ scryptsy
 
 `scryptsy` is a pure JavaScript implementation of the [scrypt][wiki] key deriviation function that is fully compatible with Node.js and the browser (via Browserify). 
 
-Official documenation:
+Official documentation:
 
 http://cryptocoinjs.com/modules/crypto/scryptsy/
 
