@@ -11,6 +11,6 @@ scryptsy
 
 Official documenation:
 
-https://github.com/cryptocoinjs/scryptsy
+http://cryptocoinjs.com/modules/crypto/scryptsy/
 
 [wiki]: http://en.wikipedia.org/wiki/Scrypt
