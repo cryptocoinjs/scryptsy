@@ -1,3 +1,7 @@
+1.1.0 / 2014-07-28
+------------------
+- added `progressCallback` (Nadav Ivgi / #4)[https://github.com/cryptocoinjs/scryptsy/pull/4]
+
 1.0.0 / 2014-06-10
 ------------------
 - moved tests to fixtures
