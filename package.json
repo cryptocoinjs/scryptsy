@@ -36,7 +36,8 @@
     "test": "mocha --ui bdd",
     "unit": "./node_modules/.bin/mocha",
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
-    "coveralls": "npm run-script coverage && node ./node_modules/.bin/coveralls < coverage/lcov.info"
+    "coveralls": "npm run-script coverage && node ./node_modules/.bin/coveralls < coverage/lcov.info",
+    "browser-test": "./node_modules/.bin/mochify --wd -R spec"
   },
   "testling": {
     "harness": "mocha",
