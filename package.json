@@ -1,6 +1,6 @@
 {
   "name": "scryptsy",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Pure JavaScript implementation of the scrypt key deriviation function that is fully compatible with Node.js and the browser.",
   "main": "lib/scrypt.js",
   "author": "",
