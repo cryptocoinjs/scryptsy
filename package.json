@@ -7,7 +7,6 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^1.20.1",
-    "crypto-browserify": "^2.1.8",
     "mochify": "^2.1.0",
     "istanbul": "^0.2.11",
     "coveralls": "^2.10.0"
@@ -29,9 +28,6 @@
     "bitcoin",
     "bip38"
   ],
-  "browser": {
-    "crypto": "crypto-browserify"
-  },
   "scripts": {
     "test": "mocha --ui bdd",
     "unit": "./node_modules/.bin/mocha",

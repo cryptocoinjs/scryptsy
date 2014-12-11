@@ -1,6 +1,7 @@
 1.2.0 / 2014-12-10
 ------------------
 - upgraded `pbkdf2-sha256` from `1.0.1` to `1.1.0`
+- removed `browser` field for `crypto`; not-necessary anymore
 
 1.1.0 / 2014-07-28
 ------------------
