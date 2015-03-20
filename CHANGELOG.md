@@ -1,3 +1,8 @@
+1.2.1 / 2015-03-01
+------------------
+- now using standard for code formatting
+- now using `pbkdf2` module over `pbkdf2-sha256`, huge performance increase in Node
+
 1.2.0 / 2014-12-11
 ------------------
 - upgraded `pbkdf2-sha256` from `1.0.1` to `1.1.0`
