@@ -6,10 +6,11 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "coveralls": "^2.10.0",
+    "istanbul": "^0.3.5",
     "mocha": "^2.2.0",
     "mochify": "^2.1.0",
-    "istanbul": "^0.3.5",
-    "coveralls": "^2.10.0"
+    "standard": "^3.2.0"
   },
   "dependencies": {
     "pbkdf2-sha256": "^1.1.0"
@@ -33,6 +34,7 @@
     "unit": "./node_modules/.bin/mocha",
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
     "coveralls": "npm run-script coverage && node ./node_modules/.bin/coveralls < coverage/lcov.info",
-    "browser-test": "./node_modules/.bin/mochify --wd -R spec"
+    "browser-test": "./node_modules/.bin/mochify --wd -R spec",
+    "standard": "standard"
   }
 }
