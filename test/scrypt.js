@@ -3,7 +3,7 @@
 var assert = require('assert')
 var scrypt = require('../')
 
-var fixtures = require('./fixtures/scrypt')
+var fixtures = require('./fixtures')
 
 // some tests params from: https://github.com/barrysteyn/node-scrypt/blob/master/tests/scrypt-tests.js
 // also: https://tools.ietf.org/html/draft-josefsson-scrypt-kdf-00
