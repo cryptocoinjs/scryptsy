@@ -12,9 +12,7 @@
     "mochify": "^2.1.0",
     "standard": "^7.1.1"
   },
-  "dependencies": {
-    "pbkdf2": "^3.0.3"
-  },
+  "dependencies": {},
   "repository": {
     "url": "git@github.com:cryptocoinjs/scryptsy.git",
     "type": "git"
