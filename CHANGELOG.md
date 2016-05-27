@@ -1,3 +1,7 @@
+2.0.0 / 2016-05-26
+------------------
+- **breaking** Node v0.10 not supported anymore.
+
 1.2.1 / 2015-03-01
 ------------------
 - now using standard for code formatting
