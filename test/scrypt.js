@@ -18,8 +18,51 @@ describe('scrypt', function () {
       it('should compute for ' + f.description, function () {
         var data = scrypt(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen)
 
-        assert.equal(data.toString('hex'), f.result)
+        assert.strictEqual(data.toString('hex'), f.result)
       })
+    })
+  })
+  describe('progress callback', function () {
+    var f = fixtures.valid[1]
+    it('should callback for ' + f.description, function () {
+      var called = []
+      var data = scrypt(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen, function (d) {
+        called.push(d)
+      })
+      assert.strictEqual(called.length, 32)
+      assert.deepStrictEqual(called[5], {
+        current: 6000,
+        percent: 18.310546875,
+        total: 32768
+      })
+      assert.deepStrictEqual(called[31], {
+        current: 32000,
+        percent: 97.65625,
+        total: 32768
+      })
+      assert.strictEqual(data.toString('hex'), f.result)
+    })
+  })
+  describe('handle bad options', function () {
+    it('rejects N that is too low', function () {
+      assert.throws(function () {
+        scrypt('nothing', 'nothing', -1)
+      }, /N must be > 0 and a power of 2/)
+    })
+    it('rejects N that is not a power of 2', function () {
+      assert.throws(function () {
+        scrypt('nothing', 'nothing', 3)
+      }, /N must be > 0 and a power of 2/)
+    })
+    it('rejects N that too large', function () {
+      assert.throws(function () {
+        scrypt('nothing', 'nothing', 0x80000000 * 256, 1)
+      }, /Parameter N is too large/)
+    })
+    it('rejects r that too large', function () {
+      assert.throws(function () {
+        scrypt('nothing', 'nothing', 4, 8, 0x80000000)
+      }, /Parameter r is too large/)
     })
   })
 })
