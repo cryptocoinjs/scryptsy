@@ -1,9 +1,9 @@
 /* global describe, it */
 
-var assert = require('assert')
-var scrypt = require('../')
+const assert = require('assert')
+const scrypt = require('../')
 
-var fixtures = require('./fixtures')
+const fixtures = require('./fixtures')
 
 // some tests params from: https://github.com/barrysteyn/node-scrypt/blob/master/tests/scrypt-tests.js
 // also: https://tools.ietf.org/html/draft-josefsson-scrypt-kdf-00
@@ -15,10 +15,12 @@ describe('scrypt', function () {
     fixtures.valid.forEach(function (f) {
       if (f.skip) return // impractical to run most times
 
-      it('should compute for ' + f.description, function () {
-        var data = scrypt(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen)
+      it('should compute for ' + f.description, async function () {
+        var data1 = await scrypt.async(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen)
+        var data2 = scrypt(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen)
 
-        assert.equal(data.toString('hex'), f.result)
+        assert.strictEqual(data1.toString('hex'), f.result)
+        assert.strictEqual(data2.toString('hex'), f.result)
       })
     })
   })
