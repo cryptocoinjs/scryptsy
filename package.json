@@ -5,6 +5,9 @@
   "main": "lib/index.js",
   "author": "",
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "coveralls": "^3.0.3",
     "mocha": "^6.0.2",
