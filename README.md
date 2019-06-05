@@ -22,6 +22,13 @@ Installation
 
 
 
+Browserify Note
+------------
+
+When using a browserified bundle, be sure to add `setImmediate` as a shim.
+
+
+
 Example
 -------
 
