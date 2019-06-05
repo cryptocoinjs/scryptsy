@@ -1,7 +1,7 @@
 /* global describe, it */
 
 const assert = require('assert')
-const { scrypt, scryptSync } = require('../')
+const scrypt = require('../')
 
 const fixtures = require('./fixtures')
 
@@ -16,8 +16,8 @@ describe('scrypt', function () {
       if (f.skip) return // impractical to run most times
 
       it('should compute for ' + f.description, async function () {
-        var data1 = await scrypt(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen)
-        var data2 = scryptSync(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen)
+        var data1 = await scrypt.async(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen)
+        var data2 = scrypt(f.key, f.salt, f.iterations, f.memory, f.parallel, f.keyLen)
 
         assert.strictEqual(data1.toString('hex'), f.result)
         assert.strictEqual(data2.toString('hex'), f.result)
