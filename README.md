@@ -33,7 +33,7 @@ Example
 -------
 
 ```js
-const { scrypt, scryptSync } = require('scryptsy')
+const scrypt = require('scryptsy')
 
 async function main () {
   var key = "pleaseletmein"
