@@ -35,6 +35,9 @@ async function main () {
   console.log(data1.toString('hex'))
   // => 7023bdcb3afd7348461c06cd81fd38ebfda8fbba904f8e3ea9b543f6545da1f2d5432955613f0fcf62d49705242a9af9e61e85dc0d651e40dfcf017b45575887
 
+  // async is actually slower, but it will free up the event loop occasionally
+  // which will allow for front end GUI elements to update and cause it to not
+  // freeze up.
   var data2 = await scrypt(key, salt, 16384, 8, 1, 64)
   console.log(data2.toString('hex'))
   // => 7023bdcb3afd7348461c06cd81fd38ebfda8fbba904f8e3ea9b543f6545da1f2d5432955613f0fcf62d49705242a9af9e61e85dc0d651e40dfcf017b45575887
